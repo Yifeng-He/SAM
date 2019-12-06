@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: ProdListCols
-      CodeUri: s3://yifenghe2019/e63b7cad59e10c5853321e6da01ca7bc
+      CodeUri: s3://yifenghe2019/d2f670604f8ca281f9c6a36304842de1
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       Description: List the col names
@@ -21,13 +21,13 @@ Resources:
         HelloWorld:
           Type: Api
           Properties:
-            Path: /hello
-            Method: post
+            Path: /
+            Method: POST
 Outputs:
   HelloWorldApi:
     Description: API Gateway endpoint URL for Prod stage for Hello World function
     Value:
-      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod
   HelloWorldFunction:
     Description: Hello World Lambda Function ARN
     Value:
