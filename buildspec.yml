@@ -1,6 +1,12 @@
-version: 0.1
+version: 0.2
+
 phases:
   install:
+    runtime-versions:
+       python: 3.6
+    commands:
+      - pip install cfn-lint
+  build:
     commands:
       - aws cloudformation package --template-file template.yaml --s3-bucket yifenghe2019 --output-template-file deploy.yaml
 artifacts:
@@ -8,3 +14,4 @@ artifacts:
   files:
     - template.yaml
     - deploy.yaml
+ 
