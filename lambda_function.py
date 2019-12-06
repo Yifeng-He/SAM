@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     
     df = load_csv(s3_client, bucket, key)
     list_cols = list(df.columns)
-    print('test')
+    print('test git')
     print(list_cols)
     
     return list_cols
