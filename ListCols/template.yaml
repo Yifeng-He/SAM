@@ -23,8 +23,8 @@ Resources:
                 HelloWorld:
                     Type: Api
                     Properties:
-                        Path: /hello
-                        Method: post
+                        Path: /
+                        Method: POST
                     
 
 Outputs:
