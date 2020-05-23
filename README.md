@@ -22,6 +22,7 @@ It will automatically create clips from screen shots
 ```
 
 Show text over pictures 
+Here are the equation $a=b^2/(c+2)$
 
 ---
 
