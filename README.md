@@ -24,12 +24,15 @@ It will automatically create clips from screen shots
 Show text over pictures 
 Here are the equation $a=b^2/(c+2)$
 
+
 ---
 
 ```md
 * Create video from screenshots
 * Add captions
 * Align audio and video
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+
 ```
 
 Speed up or slow down the action to match the audio narration
